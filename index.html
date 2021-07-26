@@ -4,24 +4,48 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FCC: C# Introductory Technical Documenation Page</title>
+        <link rel="stylesheet" href="css/style.css">
+        <title>FCC: C# Introductory Technical Documentation Page</title>
     </head>
     <body>
-        <header class="header">
-            <h1>C# Introductory Technical Documenation</h1>
-            <nav>
-                <a href="#introduction">Introduction</a>
-                <a href="#prerequisite_knowledge">Prerequisite Knowledge</a>
-                <a href="#programming_environment_setup">Programming Environment Setup</a>
-                <a href="#hello_world">Hello World</a>
-                <a href="#declaring_and_using_variables">Declaring and Using Variables</a>
-                <a href="#data_types">Data Types</a>
-                <a href="#if_statements">If Statements</a>
-                <a href="repeating_code_with_loops">Repeating Code with Loops</a>
-                <a href="reusing_code_anywhere_with_loops">Reusing Code Anywhere with Functions</a>
-                <a href="reference">Reference</a>
-            </nav>
-        </header>
+
+        <nav id="navbar">
+            <header class="header">
+                <h1>C# Introductory Technical Documentation</h1>
+            </header>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#introduction">Introduction</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#prerequisite_knowledge">Prerequisite Knowledge</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#programming_environment_setup">Programming Environment Setup</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#hello_world">Hello World</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#declaring_and_using_variables">Declaring and Using Variables</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#data_types">Data Types</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#if_statements">If Statements</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#repeating_code_with_loops">Repeating Code with Loops</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#reusing_code_anywhere_with_loops">Reusing Code Anywhere with Functions</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#reference">Reference</a>
+                </li>
+            </ul>
+        </nav>
 
         <main id="main-doc">
             <section class="main-section" id="introduction">
@@ -74,6 +98,15 @@
 
             <section class="main-section" id="hello_world">
                 <h1>Hello World</h1>
+                <code>Console.WriteLine("Hello World!");</code>
+                <p>
+                    Congratulations! You've run your first C# program. It's a simple program that prints the message "Hello World!". It used the 
+                    Console.WriteLine method to print that message. Console is a type that represents the console window. WriteLine is a method 
+                    of the Console type that prints a line of text to that text console.
+                    <br>
+                    Let's move on and explore more. The rest of this lesson explores working with the string type, which represents text in C#. 
+                    Like the Console type, the string type has methods. The string methods work with text.
+                </p>
             </section>
 
             <section class="main-section" id="declaring_and_using_variables">

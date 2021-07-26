@@ -11,6 +11,26 @@ body {
   line-height: 1.6;
 }
 
+main, footer {
+  padding: 20px;
+}
+
+main .main-section, footer .main-section {
+  padding: 10px 0px;
+}
+
+main .main-section :not(h1):not(code), footer .main-section :not(h1):not(code) {
+  padding: 10px 0px 10px 20px;
+}
+
+main .main-section ul, footer .main-section ul {
+  padding: 12.5px 0px 12.5px 60px !important;
+}
+
+main .main-section ul li, footer .main-section ul li {
+  padding: 7.5px 0px;
+}
+
 #navbar header h1 {
   text-align: center;
 }

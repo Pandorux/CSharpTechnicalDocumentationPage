@@ -25,7 +25,7 @@ main, footer {
     .main-section {
 
         padding: 10px 0px;
-        :not(h1):not(code) {
+        :not(h1):not(code):not(div) {
             padding: 10px 0px 10px 20px;
         }
 
@@ -39,7 +39,8 @@ main, footer {
     }
 }
 
-// Specific Styles
+// Nav Styles
+
 #navbar {
 
     header h1 {
@@ -61,7 +62,24 @@ main, footer {
     }
 }
 
-.main-section {
+// Code Styles 
 
+.code-container {
+    counter-reset: line;
+    overflow: auto;
+    max-height: 400px;
+    width: 100%;
+    padding: 7.5px;
+    border-radius: 5px;
+    background-color: lightgray;
 
+    code:before {
+        content: "Line " counter(line) ": ";
+    }
+    
+    code {
+        counter-increment: line;
+    }
 }
+
+

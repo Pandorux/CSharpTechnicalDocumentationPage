@@ -19,7 +19,7 @@ main .main-section, footer .main-section {
   padding: 10px 0px;
 }
 
-main .main-section :not(h1):not(code), footer .main-section :not(h1):not(code) {
+main .main-section :not(h1):not(code):not(div), footer .main-section :not(h1):not(code):not(div) {
   padding: 10px 0px 10px 20px;
 }
 
@@ -52,5 +52,23 @@ main .main-section ul li, footer .main-section ul li {
   border-style: solid;
   border-width: 1px;
   padding: 10px 0px 10px 20px;
+}
+
+.code-container {
+  counter-reset: line;
+  overflow: auto;
+  max-height: 400px;
+  width: 100%;
+  padding: 7.5px;
+  border-radius: 5px;
+  background-color: lightgray;
+}
+
+.code-container code:before {
+  content: "Line " counter(line) ": ";
+}
+
+.code-container code {
+  counter-increment: line;
 }
 /*# sourceMappingURL=style.css.map */

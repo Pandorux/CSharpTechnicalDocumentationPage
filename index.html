@@ -5,23 +5,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
-        <title>FCC: C# Introductory Technical Documentation Page</title>
+        <title>FCC: Introductory to C# Console Logs and Variables</title>
     </head>
     <body>
 
         <nav id="navbar">
-            <header class="header">
-                <h1>C# Introductory Technical Documentation</h1>
+            <header class="header" id="Introductory_To_C#_Console_Logs_And_Variables">
+                <h1>Introductory to C# Console Logs and Variables</h1>
             </header>
             <ul>
                 <li>
                     <a class="nav-link" href="#introduction">Introduction</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#prerequisite_knowledge">Prerequisite Knowledge</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#programming_environment_setup">Programming Environment Setup</a>
                 </li>
                 <li>
                     <a class="nav-link" href="#hello_world">Hello World</a>
@@ -33,16 +27,7 @@
                     <a class="nav-link" href="#data_types">Data Types</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#if_statements">If Statements</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#repeating_code_with_loops">Repeating Code with Loops</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#reusing_code_anywhere_with_loops">Reusing Code Anywhere with Functions</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#reference">Reference</a>
+                    <a class="nav-link" href="#references">Reference</a>
                 </li>
             </ul>
         </nav>
@@ -82,22 +67,18 @@
             <section class="main-section" id="prerequisite_knowledge">
                 <h1>Prerequisite Knowledge</h1>
                 <p>
-                    This guide assumes you have the following back background:
+                    This guide assumes you have the following:
 
                     <ul>
-                        <li>blah blah</li>
-                        <li>blah blah blah blah</li>
-                        <li>Some programming experience with a sequential coding language like Python, or a visual coding language like Scratch.</li>
+                        <li>That you have already setup your IDE for C# development</li>
+                        <li>That you have some programming experience with a sequential coding language like Python, or a visual coding language like Scratch.</li>
                     </ul>
                 </p>
             </section>
 
-            <section class="main-section" id="programming_environment_setup">
-                <h1>Programming Environment Setup</h1>
-            </section>
-
             <section class="main-section" id="hello_world">
                 <h1>Hello World</h1>
+                <p>To start off, write the following line of code in the main function of your IDE and then execute the code.</p>
                 <div class="code-container">
                     <code>Console.WriteLine("Hello World!");</code>
                 </div>
@@ -113,43 +94,53 @@
 
             <section class="main-section" id="declaring_and_using_variables">
                 <h1>Declaring and Using Variables</h1>
-            </section>
-
-            <section class="main-section" id="variable_scope">
-                <h1>Variable Scope</h1>
+                <p>
+                    Now that we can print messages to the console, we use that existing knowledge to learn and understand variables in C#. Lets start off by 
+                    declaring a variable and then print it using the console.
+                </p>
+                <div class="code-container">
+                    <code>int i = 3;</code>
+                    <code>Console.WriteLine("This number is " + i);</code>
+                </div>
+                <p>
+                    Nice! Our program remembered that we assigned 3 to the variable i when we printed it in the console. Variables allows us to store a variety
+                    of information we use later in our program from simple numbers to giant tables of information. We can also change this information as we see 
+                    fit. Try out the code below to see what it does.
+                </p>
+                <div class="code-container">
+                    <code>int i = 7;</code>
+                    <code>i = 15;</code>
+                    <code>Console.WriteLine("What is my number? " + i);</code>
+                    <code>i = 23;</code>
+                    <code>Console.WriteLine("And What is my number now? " + i);</code>
+                </div>
+                <p>
+                    It is pretty easy to change the value of our i variable as we see fit as long as it is being assigned a number. As C# is a strongly-typed
+                    programming language we need to be explicit about what type of data is stored in our variables. In C#, if you assigned a value to a 
+                    variable that does not match the variable type then C# will throw an error. 
+                </p>
+                <p>
+                    We'll get go over several of the data types C# has in the next section.
+                </p>
             </section>
 
             <section class="main-section" id="data_types">
                 <h1>Data Types</h1>
             </section>
 
-            <section class="main-section" id="if_statements">
-                <h1>If Statements</h1>
-            </section>
-
-            <section class="main-section" id="repeating_code_with_loops">
-                <h1>Repeating Code with Loops</h1>
-            </section>
-
-            <section class="main-section" id="reusing_code_anywhere_with_loops">
-                <h1>Reusing Code Anywhere with Functions</h1>
-            </section>
-
-            <section class="main-section" id="reference">
-                <h1>Reference</h1>
+            <section class="main-section" id="references">
+                <h1>References</h1>
+                <nav>
+                    <a href="/">Free Code Camp</a>
+                    <a href="/">Microsoft</a>
+                    <a href="/">Official C# Documentation</a>
+                </nav>
             </section>
         </main>
 
         <footer class="footer">
-            <nav>
-                <a href="/">Free Code Camp</a>
-                <a href="/">Microsoft</a>
-                <a href="/">Official C# Documentation</a>
-            </nav>
-            <p>
-                This page was created by <a href="/">Jared Carey</a> as apart of freeCodeCamp's Responsive Web Design course. To see 
-                more of Jared's development projects and to stay up-to-date with his work, follow him on <a href="/">twitter</a>
-            </p>
+            This page was created by <a href="/">Jared Carey</a> as apart of freeCodeCamp's Responsive Web Design course. To see 
+            more of Jared's development projects and to stay up-to-date with his work, follow him on <a href="/">twitter</a>
         </footer>
     </body>
 </html>

@@ -59,16 +59,24 @@ main .main-section ul li, footer .main-section ul li {
   overflow: auto;
   max-height: 400px;
   width: 100%;
+  margin: 5px 0px;
   padding: 7.5px;
   border-radius: 5px;
   background-color: lightgray;
 }
 
-.code-container code:before {
+.code-container code::before {
   content: "Line " counter(line) ": ";
 }
 
 .code-container code {
+  overflow: auto;
   counter-increment: line;
+  padding: 0px;
+}
+
+.code-container code::after {
+  content: "\a";
+  white-space: pre;
 }
 /*# sourceMappingURL=style.css.map */

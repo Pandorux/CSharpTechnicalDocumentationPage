@@ -69,16 +69,24 @@ main, footer {
     overflow: auto;
     max-height: 400px;
     width: 100%;
+    margin: 5px 0px;
     padding: 7.5px;
     border-radius: 5px;
     background-color: lightgray;
 
-    code:before {
+    code::before {
         content: "Line " counter(line) ": ";
     }
     
     code {
+        overflow: auto;
         counter-increment: line;
+        padding:  0px;
+    }
+
+    code::after {
+        content: "\a";
+        white-space: pre;
     }
 }
 

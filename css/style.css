@@ -66,13 +66,13 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 0px 10px 20px;
 }
 
-#navbar .dark-mode-button {
+#navbar .dark-mode-button-container {
   padding-top: 20px;
   width: 100%;
   text-align: center;
 }
 
-#navbar .dark-mode-button button {
+#navbar .dark-mode-button-container button {
   height: 27.5px;
   width: 110px;
 }

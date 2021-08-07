@@ -1,5 +1,5 @@
 
-// Variables
+// Variables - Light Style
 $heading-color: #475c7A;
 $normal-text-color: #325D79;
 $code-text-color: #685D79;
@@ -9,6 +9,17 @@ $bg-main-color: #EFEEEE;
 $bg-code-color: #9BD7D1;
 
 $nav-pc-view-width: 300px;
+$nav-border-color: #685D79;
+
+// Variables - Dark Style
+$heading-color-dark: #475c7A;
+$normal-text-color-dark: #325D79;
+$code-text-color-dark: #685D79;
+$nav-text-color-dark: #685D79;
+
+$bg-main-color-dark: #EFEEEE;
+$bg-code-color-dark: #9BD7D1;
+
 $nav-border-color: #685D79;
 
 // Global Styles
@@ -78,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
         }
     }
 
-    .dark-mode-button {
+    .dark-mode-button-container {
         padding-top: 20px;
         width: 100%;
         text-align: center;
@@ -142,4 +153,37 @@ footer {
         margin-left: $nav-pc-view-width;
     }
 
+}
+
+// Dark Style
+
+.dark {
+
+    * {
+        color: $normal-text-color-dark;
+    }
+    
+    body {
+        background-color: $bg-main-color-dark;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $heading-color-dark;
+    }
+
+    nav {
+
+        border-color: $nav-border-color-dark;
+        border-right: $nav-border-color-dark solid;
+
+        li {
+            border-color: $nav-border-color-dark;
+        }
+
+    }
+
+    .code-container {
+        color: $code-text-color-dark;
+        background-color:$bg-code-color-dark;
+    }
 }

@@ -33,7 +33,7 @@ main .main-section ul li, footer .main-section ul li {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #475c7A;
+  color: #325D79;
 }
 
 #navbar header h1 {
@@ -57,13 +57,15 @@ h1, h2, h3, h4, h5, h6 {
           flex-direction: column;
   max-height: 250px;
   overflow: auto;
+  border-bottom: #325D79 solid;
 }
 
 #navbar ul li {
-  border-color: #685D79;
   border-style: solid;
   border-width: 1px;
   padding: 10px 0px 10px 20px;
+  border-style: none;
+  border-top: #325D79 solid;
 }
 
 #navbar .dark-mode-button-container {
@@ -85,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 5px 0px;
   padding: 7.5px;
   border-radius: 5px;
-  color: #685D79;
+  color: #325D79;
   background-color: #9BD7D1;
 }
 
@@ -110,15 +112,61 @@ footer {
 }
 
 @media screen and (min-width: 800px) {
-  nav {
+  #navbar {
     position: fixed;
     width: 300px;
     height: 100vh;
-    border-color: #685D79;
-    border-right: #685D79 solid;
+    border-color: #325D79;
+    border-right: #325D79 solid;
+  }
+  #navbar ul {
+    border-bottom: #325D79 solid;
+  }
+  #navbar ul li {
+    border-style: none;
+    border-top: #325D79 solid;
   }
   main, footer {
     margin-left: 300px;
   }
+}
+
+.dark, .dark * {
+  color: #EFEEEE;
+  background-color: #325D79;
+}
+
+.dark *, .dark * * {
+  color: #EFEEEE;
+}
+
+.dark body, .dark * body {
+  background-color: #325D79;
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6, .dark * h1, .dark * h2, .dark * h3, .dark * h4, .dark * h5, .dark * h6 {
+  color: #EFEEEE;
+}
+
+.dark #navbar, .dark * #navbar {
+  border-color: #9BD7D1;
+}
+
+.dark #navbar ul, .dark * #navbar ul {
+  border-color: #9BD7D1;
+}
+
+.dark #navbar ul li, .dark * #navbar ul li {
+  border-color: #9BD7D1;
+}
+
+.dark .code-container, .dark * .code-container {
+  color: #325D79;
+  background-color: #9BD7D1;
+}
+
+.dark .code-container code, .dark * .code-container code {
+  color: #325D79;
+  background-color: #9BD7D1;
 }
 /*# sourceMappingURL=style.css.map */

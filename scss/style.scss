@@ -1,26 +1,26 @@
 
 // Variables - Light Style
-$heading-color: #475c7A;
+$heading-color: #325D79;
 $normal-text-color: #325D79;
-$code-text-color: #685D79;
-$nav-text-color: #685D79;
+$code-text-color: #325D79;
+$nav-text-color: #325D79;
 
 $bg-main-color: #EFEEEE;
 $bg-code-color: #9BD7D1;
 
 $nav-pc-view-width: 300px;
-$nav-border-color: #685D79;
+$nav-border-color: #325D79;
 
 // Variables - Dark Style
-$heading-color-dark: #475c7A;
-$normal-text-color-dark: #325D79;
-$code-text-color-dark: #685D79;
-$nav-text-color-dark: #685D79;
+$heading-color-dark: #EFEEEE;
+$normal-text-color-dark: #EFEEEE;
+$code-text-color-dark: #325D79;
+$nav-text-color-dark: #EFEEEE;
 
-$bg-main-color-dark: #EFEEEE;
+$bg-main-color-dark: #325D79;
 $bg-code-color-dark: #9BD7D1;
 
-$nav-border-color: #685D79;
+$nav-border-color-dark: #9BD7D1;
 
 // Global Styles
 * {
@@ -80,12 +80,14 @@ h1, h2, h3, h4, h5, h6 {
         flex-direction: column;
         max-height: 250px;
         overflow: auto;
+        border-bottom: $nav-border-color solid;
 
         li {
-            border-color: $nav-border-color;
             border-style: solid;
             border-width: 1px;
             padding: 10px 0px 10px 20px;
+            border-style: none;
+            border-top: $nav-border-color solid;
         }
     }
 
@@ -141,12 +143,22 @@ footer {
 
 @media screen and (min-width: 800px) {
 
-    nav {
+    #navbar {
         position: fixed;
         width: $nav-pc-view-width;
         height: 100vh;
         border-color: $nav-border-color;
         border-right: $nav-border-color solid;
+
+        ul {
+
+            border-bottom: $nav-border-color solid;
+
+            li {
+                border-style: none;
+                border-top: $nav-border-color solid;
+            }
+        }
     }
 
     main, footer {
@@ -157,7 +169,10 @@ footer {
 
 // Dark Style
 
-.dark {
+.dark, .dark * {
+
+    color: $normal-text-color-dark;
+    background-color: $bg-main-color-dark;
 
     * {
         color: $normal-text-color-dark;
@@ -171,13 +186,16 @@ footer {
         color: $heading-color-dark;
     }
 
-    nav {
+    #navbar {
 
         border-color: $nav-border-color-dark;
-        border-right: $nav-border-color-dark solid;
 
-        li {
+        ul {
             border-color: $nav-border-color-dark;
+
+            li {
+                border-color: $nav-border-color-dark;
+            }
         }
 
     }
@@ -185,5 +203,10 @@ footer {
     .code-container {
         color: $code-text-color-dark;
         background-color:$bg-code-color-dark;
+
+        code {
+            color: $code-text-color-dark;
+            background-color:$bg-code-color-dark;
+        }
     }
 }

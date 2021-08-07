@@ -19,7 +19,7 @@ main .main-section, footer .main-section {
   padding: 10px 0px;
 }
 
-main .main-section :not(h1):not(code):not(div), footer .main-section :not(h1):not(code):not(div) {
+main .main-section :not(h1):not(code):not(div):not(a), footer .main-section :not(h1):not(code):not(div):not(a) {
   padding: 10px 0px 10px 20px;
 }
 
@@ -33,6 +33,7 @@ main .main-section ul li, footer .main-section ul li {
 
 #navbar header h1 {
   text-align: center;
+  padding: 10px 0px 10px 20px;
 }
 
 #navbar ul {
@@ -78,5 +79,10 @@ main .main-section ul li, footer .main-section ul li {
 .code-container code::after {
   content: "\a";
   white-space: pre;
+}
+
+footer {
+  text-align: center;
+  padding-top: 0px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -25,7 +25,7 @@ main, footer {
     .main-section {
 
         padding: 10px 0px;
-        :not(h1):not(code):not(div) {
+        :not(h1):not(code):not(div):not(a) {
             padding: 10px 0px 10px 20px;
         }
 
@@ -45,6 +45,7 @@ main, footer {
 
     header h1 {
         text-align: center;
+        padding: 10px 0px 10px 20px;
     }
 
     ul {
@@ -90,4 +91,9 @@ main, footer {
     }
 }
 
+// Footer Styles
 
+footer {
+    text-align: center;
+    padding-top: 0px;
+}

@@ -68,12 +68,11 @@
                 <h1>Prerequisite Knowledge</h1>
                 <p>
                     This guide assumes you have the following:
-
-                    <ul>
-                        <li>That you have already setup your IDE for C# development</li>
-                        <li>That you have some programming experience with a sequential coding language like Python, or a visual coding language like Scratch.</li>
-                    </ul>
                 </p>
+                <ul>
+                    <li>That you have already setup your IDE for C# development</li>
+                    <li>That you have some programming experience with a sequential coding language like Python, or a visual coding language like Scratch.</li>
+                </ul>
             </section>
 
             <section class="main-section" id="hello_world">
@@ -126,21 +125,50 @@
 
             <section class="main-section" id="data_types">
                 <h1>Data Types</h1>
+                <p>
+                    Due to C# being a strongly-typed programming language we need to specify the type of data each vairable we declare will use. Remember if you assign data 
+                    to a variable that does not have a matching type then the compiler will throw an error. You can a short list of common data types below.
+                </p>
+                <div class="code-container">
+                    <code>// Booleans are variables that can only be true or false</code>
+                    <code>// They're really useful for if statements and loops!</code>
+                    <code>boolean b = true;</code>
+                    <code></code>
+                    <code>string s = "Strings store text!";</code>
+                    <code></code>
+                    <code>// Ints hold whole numbers</code>
+                    <code>int i = 3;</code>
+                    <code></code>
+                    <code>// Floats can hold whole and frational numbers</code>
+                    <code>float f = 3.2345f;</code>
+                </div>
+                <p>
+                    You can find a more extensive list of data types within <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">Microsoft's C# Documentation</a>.
+                    Once you start learning about loops and functions you will learn about collections of data as well.  
+                </p>
             </section>
 
             <section class="main-section" id="references">
                 <h1>References</h1>
                 <nav>
-                    <a href="/">Free Code Camp</a>
-                    <a href="/">Microsoft</a>
-                    <a href="/">Official C# Documentation</a>
+                    <ul>
+                        <li>
+                            <a href="https://www.freecodecamp.org/learn">Free Code Camp</a>
+                        </li>
+                        <li>
+                            <a href="https://www.microsoft.com/en-au/">Microsoft</a>
+                        </li>
+                        <li>
+                            <a href="https://docs.microsoft.com/en-us/dotnet/csharp/">Official C# Documentation</a>
+                        </li>
+                    </ul>
                 </nav>
             </section>
         </main>
 
         <footer class="footer">
-            This page was created by <a href="/">Jared Carey</a> as apart of freeCodeCamp's Responsive Web Design course. To see 
-            more of Jared's development projects and to stay up-to-date with his work, follow him on <a href="/">twitter</a>
+            This page was created by <a href="https://www.jaredcarey.dev/">Jared Carey</a> as apart of freeCodeCamp's Responsive Web Design course. To see 
+            more of Jared's development projects and to stay up-to-date with his work, follow him on <a href="https://twitter.com/jaredljcarey">twitter</a>
         </footer>
     </body>
 </html>

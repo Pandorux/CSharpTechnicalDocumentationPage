@@ -1,4 +1,5 @@
 * {
+  color: grey;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -29,6 +30,10 @@ main .main-section ul, footer .main-section ul {
 
 main .main-section ul li, footer .main-section ul li {
   padding: 7.5px 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: black;
 }
 
 #navbar header h1 {
@@ -63,7 +68,8 @@ main .main-section ul li, footer .main-section ul li {
   margin: 5px 0px;
   padding: 7.5px;
   border-radius: 5px;
-  background-color: lightgray;
+  color: grey;
+  background-color: lightgrey;
 }
 
 .code-container code::before {
@@ -84,5 +90,18 @@ main .main-section ul li, footer .main-section ul li {
 footer {
   text-align: center;
   padding-top: 0px;
+}
+
+@media screen and (min-width: 800px) {
+  nav {
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    border-color: #333;
+    border-right: #333 solid;
+  }
+  main, footer {
+    margin-left: 300px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

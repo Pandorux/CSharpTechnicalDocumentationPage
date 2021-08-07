@@ -1,13 +1,19 @@
 
 // Variables
-$text-color: black;
+$heading-color: black;
+$normal-text-color: grey;
+$code-text-color: grey;
+$nav-text-color: grey;
+
 $bg-main-color: white;
-$bg-code-color: grey;
+$bg-code-color: lightgrey;
 
-
+$nav-pc-view-width: 300px;
+$nav-border-color: #333;
 
 // Global Styles
 * {
+    color: $normal-text-color;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -39,6 +45,10 @@ main, footer {
     }
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: $heading-color;
+}
+
 // Nav Styles
 
 #navbar {
@@ -55,7 +65,7 @@ main, footer {
         overflow: auto;
 
         li {
-            border-color: #333;
+            border-color: $nav-border-color;
             border-style: solid;
             border-width: 1px;
             padding: 10px 0px 10px 20px;
@@ -73,7 +83,8 @@ main, footer {
     margin: 5px 0px;
     padding: 7.5px;
     border-radius: 5px;
-    background-color: lightgray;
+    color: $code-text-color;
+    background-color:$bg-code-color;
 
     code::before {
         content: "Line " counter(line) ": ";
@@ -96,4 +107,22 @@ main, footer {
 footer {
     text-align: center;
     padding-top: 0px;
+}
+
+// Media Queries
+
+@media screen and (min-width: 800px) {
+
+    nav {
+        position: fixed;
+        width: $nav-pc-view-width;
+        height: 100vh;
+        border-color: $nav-border-color;
+        border-right: $nav-border-color solid;
+    }
+
+    main, footer {
+        margin-left: $nav-pc-view-width;
+    }
+
 }
